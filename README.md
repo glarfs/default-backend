@@ -7,7 +7,7 @@ This is a custom default backend for [nginx-ingress](https://github.com/kubernet
 
 ## Configuration
 
-By default, the backend will listen on port `9090` and serve an `HTML` page with the error file at `/assets/404.html`. Override the default html page by mounting a config map with the html page at a different path.
+By default, the backend will listen on port `8080` and serve an `HTML` page with the error file at `/assets/404.html`. Override the default html page by mounting a config map with the html page at a different path.
 
 **Important Note**
 
@@ -15,11 +15,13 @@ The final image is based on `scratch` image, so normal file system operations wo
 
 ## Public Builds
 
-https://hub.docker.com/r/nuvo/default-backend
+Based on https://hub.docker.com/r/nuvo/default-backend
+
+https://hub.docker.com/r/glarfs/default-backend
 
 
 Build from Source
 
 ```bash
-docker build -t nuvo/default-backend .
+docker build -t glarfs/default-backend .
 ```
