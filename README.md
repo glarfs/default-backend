@@ -1,6 +1,6 @@
-[![Docker Pulls](https://img.shields.io/docker/pulls/nuvo/default-backend.svg)](https://hub.docker.com/r/nuvo/default-backend/)
-[![Go Report Card](https://goreportcard.com/badge/github.com/nuvo/default-backend)](https://goreportcard.com/report/github.com/nuvo/default-backend)
-[![license](https://img.shields.io/github/license/nuvo/default-backend.svg)](https://github.com/nuvo/default-backend/blob/master/LICENSE)
+[![Docker Pulls](https://img.shields.io/docker/pulls/glarfs/default-backend.svg)](https://hub.docker.com/r/glarfs/default-backend/)
+[![Go Report Card](https://goreportcard.com/badge/github.com/glarfs/default-backend)](https://goreportcard.com/report/github.com/glarfs/default-backend)
+[![license](https://img.shields.io/github/license/glarfs/default-backend.svg)](https://github.com/glarfs/default-backend/blob/master/LICENSE)
 # Default backend for nginx-ingress on Kubernetes
 
 This is a custom default backend for [nginx-ingress](https://github.com/kubernetes/ingress-nginx). The only reason for creating this project was to customize the 404 page and provide a better (and branded) user experience.
