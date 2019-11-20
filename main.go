@@ -4,7 +4,6 @@ import (
 	"io/ioutil"
 	"log"
 	"net/http"
-	"fmt"
 	"strconv"
 )
 
@@ -16,7 +15,7 @@ func main() {
 		if xcode == nil {
 			xcode := "404"
 		}
-		xcodeint, err = strconv.ParseInt(xcode)
+		xcodeint, err = strconv.Atoi(xcode)
 		if err != nil {
 			log.Error("Can't parse integer: " + xcode)
 			http.Error(w, err.Error(), http.StatusInternalServerError)
