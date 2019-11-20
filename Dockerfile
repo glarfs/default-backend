@@ -12,7 +12,7 @@ RUN CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -ldflags '-w -s' -o main gith
 
 FROM scratch
 
-COPY --from=builder /go/src/github.com/nuvo/default-backend/main /
+COPY --from=builder /go/src/github.com/glarfs/default-backend/main /
 COPY --from=www /www/ /assets/
 EXPOSE 8080
 
