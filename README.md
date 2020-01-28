@@ -22,6 +22,12 @@ https://hub.docker.com/r/glarfs/default-backend
 
 Build from Source
 
+simple build:
 ```bash
 docker build -t glarfs/default-backend .
 ```
+
+multiarch build:
+```bash
+ docker buildx build -t glarfs/default-backend --platform=linux/arm,linux/arm64,linux/amd64 . --push
+ ```

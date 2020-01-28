@@ -25,9 +25,9 @@ func main() {
 		w.WriteHeader(xcodeint)
 		
 		w.Header().Set("Content-Type", "text/html; charset=utf-8")
-		file, err := ioutil.ReadFile("./assets/" + xcode + ".html")
-		if err != nil {
-			http.Error(w, err.Error(), http.StatusInternalServerError)
+		file, errfile := ioutil.ReadFile("./assets/" + xcode + ".html")
+		if errfile != nil {
+			http.Error(w, errfile.Error(), http.StatusInternalServerError)
 			log.Fatal("Can't find error html page: " + xcode)
 			return
 		}
